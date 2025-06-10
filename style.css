@@ -36,6 +36,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 48px;
 }
 
@@ -45,13 +46,26 @@
     border: 1px solid;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* .grids{
-    /* border: 1px solid black; */
-    /* box-sizing: border-box; */
-/* }  */
+#colorSelector{
+    all: unset;
+    
+    cursor: pointer;
+    border: 2px solid black;
+    height: 24px;
+    width: 24px;
+}
 
-/* .grids:hover{
-    background-color: black;
-} */
+.normalMode,
+.rainbowMode,
+.grayScaleMode,
+.clear{
+    cursor: pointer;
+    border: 2px black solid;
+}
+
+.clear{
+    font-weight: bold;
+}
